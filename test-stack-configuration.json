@@ -1,5 +1,5 @@
 {
   "Parameters" : {
-    "S3BucketName" : "code-pipeline-test-result"
+    "S3BucketName" : "code-pipeline-stack-resource-test"
   }
 }
