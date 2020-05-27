@@ -5,11 +5,9 @@ phases:
         nodejs: 10
   build:
     commands:
-      - npm install time
-      - export BUCKET=lambda-deployment-artifacts-temp
-      - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file resources.yml
+      - aws cloudformation package --template-file resources.yaml --s3-bucket lambda-deployment-artifacts-temp --output-template-file packaged-template.yml     
 artifacts:
   type: zip
   files:
-    - template.yml
-    - resources.yml
+    - resources.yaml
+    - packaged-template.yml
