@@ -11,3 +11,5 @@ artifacts:
   files:
     - resources.yaml
     - packaged-template.yml
+    - prod-stack-configuration.json
+    - test-stack-configuration.json
